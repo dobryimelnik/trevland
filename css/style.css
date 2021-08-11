@@ -572,6 +572,9 @@ img {
     } 
 }
 @media screen and (max-width: 560px) {
+    .intro__inner {
+        padding: 160px 0 0;
+    }
     .popular__list {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -602,4 +605,5 @@ img {
     .form__input {
         padding: 12px;
     }
+
 }
