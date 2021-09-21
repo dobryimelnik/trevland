@@ -478,6 +478,9 @@ img {
 }
 .footer__form {
     display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap:wrap;
     column-gap: 14px;
     padding-top: 40px;
 }
@@ -488,7 +491,7 @@ img {
     padding: 12px 36px;
     border: 0;
     border-radius: 5px;
-
+    margin-bottom: 20px;
 }
 .form__input::placeholder {
     color: #aaa;
@@ -605,5 +608,18 @@ img {
     .form__input {
         padding: 12px;
     }
-
+    .header__btn {
+        display: none;
+    }
+}
+@media screen and (max-width: 360px) {
+    .footer__form {
+        flex-wrap:wrap;
+    }
+    .form__input {
+        margin-bottom: 20px;
+    }
+    .blog__item {
+        flex-direction: column;
+    }
 }
